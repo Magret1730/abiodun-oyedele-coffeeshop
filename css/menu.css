@@ -1,0 +1,258 @@
+/* body styling */
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* header stylings */
+.nav {
+	background-color: #FFF0ED;
+	height: 9.857vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.nav__icontitle {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-left: 0rem;
+    align-items: center;
+}
+
+.nav__aicon {
+	width: 25%;
+}
+
+.nav__icon {
+	width: 100%;
+	height: 15vh;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.nav__title {
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+.nav__links {
+	list-style-type: none;
+	font-size: 1.313rem;
+	font-weight: 400;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-grow: 1;
+}
+
+.nav__link {
+	padding: 1.25rem;
+}
+
+.nav__a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav__a--shopnow {
+	color: #5BACC3 !important;
+}
+
+/* menu styling */
+.menu {
+	display: flex;
+	background: url("../assets/images/coffee-circle.jpg");
+	width: 100%;
+	height: 70.9vh;
+	background-position: center;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .menu__container {
+	border: .25rem solid #5BACC3;
+	position: relative;
+	width: 21%;
+} */
+
+.menu__title {
+	width: 21%;
+	/* width: 100%; */
+	height: 24.64vh;
+	background-color: #393939;
+	text-align: center;
+	color: white;
+	font-weight: 300;
+	font-size: 3.75rem;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	/* border: .25rem solid #5BACC3; */
+	/* position: absolute; */
+	/* position: relative; */
+}
+
+/* Nav2 Styling */
+.nav2 {
+	width: 100%;
+	background-color: #393939;
+	font-size: 1.313rem;
+	font-weight: 400;
+	height: 9.857vh;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.nav2__links {
+	list-style-type: none;
+}
+
+.nav2__link {
+	display: inline;
+	width: 100%;
+	margin-top: 5rem;
+	margin-left: 2rem;
+	border-left: 0.25rem solid #5BACC3;
+	padding-left: 2rem;
+}
+
+.nav2__a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Hot Drinks styling */
+.hotdrinks {
+	background-color: #FFF0ED;
+	text-align: center
+}
+
+.hotdrinks__title {
+	font-weight: 300;
+	font-size: 3.75rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.hotdrinks__subtitle {
+	font-size: 1.6rem;
+	font-weight: 300;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.hotdrinks__description {
+	font-size: 1.125rem;
+	font-weight: 400;
+	font-style: italic;
+	width: 30%; 
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.hotdrinks__price {
+	color: #5BACC3;
+	font-size: 1.125rem;
+	font-weight: 400;
+	padding-top: 0.5rem;
+	padding-bottom: 3rem;
+	margin: 0;
+}
+
+/* Cold Drinks styling */
+.colddrinks {
+	background-color: #F7F7F7;
+	text-align: center;
+}
+
+.colddrinks__title {
+	font-weight: 300;
+	font-size: 3.75rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.colddrinks__subtitle {
+	font-size: 1.6rem;
+	font-weight: 300;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.colddrinks__description {
+	font-size: 1.125rem;
+	font-weight: 400;
+	font-style: italic;
+	width: 30%; 
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.colddrinks__price {
+	color: #5BACC3;
+	font-size: 1.125rem;
+	font-weight: 400;
+	padding-top: 0.5rem;
+	padding-bottom: 3rem;
+	margin: 0;
+}
+
+/* pastries stylings */
+.pastries {
+	background-color: #FFF0ED;
+	text-align: center
+}
+
+.pastries__title {
+	font-weight: 300;
+	font-size: 3.75rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.pastries__subtitle {
+	font-size: 1.6rem;
+	font-weight: 300;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.pastries__description {
+	font-size: 1.125rem;
+	font-weight: 400;
+	font-style: italic;
+	width: 30%; 
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.pastries__price {
+	color: #5BACC3;
+	font-size: 1.125rem;
+	font-weight: 400;
+	padding-top: 0.5rem;
+	padding-bottom: 3rem;
+	margin: 0;
+}
