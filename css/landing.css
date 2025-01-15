@@ -9,22 +9,21 @@ body {
 	background-color: #FFF0ED;
 	margin: 0;
 	padding: 0;
-	/* text-align: center; */
 	display: flex;
-	/* justify-content: flex-start; */
-	/* align-items: center; */
 	flex-wrap: wrap;
 }
 
-.nav__logotitle {
+.nav__logo {
 	display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
 	margin: 0 0 0 1rem;
+	text-decoration: none;
+	color: black;
 }
 
-.nav__logo {
+.nav__image {
 	width: 40%;
 }
 
@@ -96,7 +95,7 @@ body {
 	padding-top: 2rem;
 }
 
-/* product styling */
+/* Products Styling */
 .products {
 	background-color: #F7F7F7;
 	padding: 1rem;
@@ -132,7 +131,8 @@ body {
 }
 
 .products__card--image {
-	height: 25vh;
+	/* height: 25vh; */
+	height: 34.5vh;
 	margin: 2rem 5rem;
 	padding: 0;
 	width: 45%;

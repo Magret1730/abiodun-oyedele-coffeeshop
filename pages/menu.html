@@ -10,11 +10,11 @@
     </head>
     <body>
         <header>
-            <nav class="nav">
-                <div class="nav__icontitle">
-                    <a class="nav__aicon" href="../index.html"><img class="nav__icon" src="../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo"></a>
+            <nav aria-labelledby="nav" class="nav">
+                <a class="nav__aicon" href="../index.html">
+                    <img class="nav__icon" src="../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo">
                     <div class="nav__title">nitro</div>
-                </div>
+                </a>
                 <ul class="nav__links">
                     <li class="nav__link">
                         <a class="nav__a" href="../index.html">ABOUT</a>
@@ -34,22 +34,22 @@
                 <section class="menu__title">MENU</section>
             </article>
 
-            <nav class="nav2">
-                <ul class="nav2__links">
-                    <li class="nav2__link">
-                        <a class="nav2__a" href="#">HOT DRINKS</a>
+            <nav aria-labelledby="subnav" class="subnav">
+                <ul class="subnav__links">
+                    <li class="subnav__link">
+                        <a class="subnav__a" href="#hotdrinks">HOT DRINKS</a>
                     </li>
-                    <li class="nav2__link">
-                        <a class="nav2__a" href="#">COLD DRINKS</a>
+                    <li class="subnav__link">
+                        <a class="subnav__a" href="#colddrinks">COLD DRINKS</a>
                     </li>
-                    <li class="nav2__link">
-                        <a class="nav2__a" href="#">PASTRIES</a>
+                    <li class="subnav__link">
+                        <a class="subnav__a" href="#pastries">PASTRIES</a>
                     </li>
                 </ul>
             </nav>
 
             <article>
-                <section class="hotdrinks">
+                <section class="hotdrinks" id="hotdrinks">
                     <h2 class="hotdrinks__title">Hot Drinks</h2>
                     <h3 class="hotdrinks__subtitle">In-house Brew</h3>
                     <p class="hotdrinks__description">Our in-house medium roast is a classic balance between sweet vanilla, nutty hazelnut, and a smooth low acidity to
@@ -61,7 +61,7 @@
                     features strong notes of semi-sweet chocolate and caramel, with mild acidity and a bright floral finish.</p>
                     <p class="hotdrinks__price">$4.99</p>
                 </section>
-                <section class="colddrinks">
+                <section class="colddrinks" id="colddrinks">
                     <h2 class="colddrinks__title">Cold Drinks</h2>
                     <h3 class="colddrinks__subtitle">Cold Brew</h3>
                     <p class="colddrinks__description">Our bright and delicious coffee blend, brewed over ice to give you a cold coffee freshness with all the flavor of our
@@ -72,7 +72,7 @@
                     <p class="colddrinks__description">A creamy drink with a kick, this drink features spicy chai tea blended with your choice of milk and poured over ice.</p>
                     <p class="colddrinks__price">$6.99</p>
                 </section>
-                <section class="pastries">
+                <section class="pastries" id="pastries">
                     <h2 class="pastries__title">Pastries</h2>
                     <h3 class="pastries__subtitle">Bacon Oatmeal Raisin Cookie</h3>
                     <p class="pastries__description">An infused bacon, sugar and egg mixture is folded into a perfect blend of oats, flour, raisins and cinnamon to create
