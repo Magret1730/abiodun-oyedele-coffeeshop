@@ -1,0 +1,238 @@
+@use "./partials/global" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+// header stylings
+.nav {
+    background-color: $primary-color-nitropink;
+    height: 9.857vh;
+    @include flex(row, flex-start, center, null);
+    padding: 0.7rem 1rem;
+
+    &__aicon {
+        @include flex(row, space-around, center, null);
+        margin-left: 0rem;
+        text-decoration: none;
+        color: $neutral-color-black;
+    }
+    
+    &__icon {
+        width: 40%;
+    }
+
+    &__title {
+        font-size: 3.5rem;
+        font-weight: 300;
+    }
+
+    &__links {
+        list-style-type: none;
+        font-size: 1.313rem;
+        font-weight: 400;
+        @include flex(row, flex-end, null, null);
+        flex-grow: 1;
+    }
+
+    &__link {
+        padding: 1.25rem;
+    }
+
+    &__a {
+        text-decoration: none;
+        color: $neutral-color-black;
+    }
+
+    &__a--shopnow {
+        color: $primary-color-nitroblue;
+    }
+}
+
+// menu styling
+.menu {
+    @include flex(column, center, center, null);
+    background: url("../assets/images/coffee-circle.jpg");
+    width: 100%;
+    height: 70.9vh;
+    background-position: center;
+    background-size: cover;
+
+    &__container {
+        position: relative;
+        width: 20.5%;
+        // height: 24.64vh;
+        height: 24vh;
+        border: .3125rem solid $primary-color-nitroblue;
+        margin-bottom: -11.9rem;
+        margin-left: -1.9rem;
+    }
+
+    &__title {
+        width: 100%;
+        width: 21.2%;
+        height: 24.95vh;
+        background-color: $neutral-color-graphite;
+        text-align: center;
+        color: $neutral-color-white;
+        font-weight: 300;
+        font-size: 3.75rem;
+        @include flex(row, center, center, null);
+    }
+}
+
+// Nav2 Styling
+.subnav {
+    width: 100%;
+    background-color: $neutral-color-graphite;
+    font-size: 1.313rem;
+    font-weight: 400;
+    height: 9.857vh;
+    text-align: center;
+    @include flex(row, center, null, null);
+
+    &__links {
+        list-style-type: none;
+    }
+
+    &__link {
+        display: inline;
+        width: 100%;
+        margin-top: 5rem;
+        margin-left: 2rem;
+        border-left: 0.25rem solid #5BACC3;
+        padding-left: 2rem;
+    }
+
+    &__a {
+        color: $neutral-color-white;
+        text-decoration: none;
+    }
+}
+
+// Hot Drinks styling
+.hotdrinks {
+    background-color: $primary-color-nitropink;
+    text-align: center;
+
+    &__title {
+        font-weight: 300;
+        font-size: 3.75rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    &__subtitle {
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    &__description {
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-style: italic;
+        width: 30%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    &__price {
+        color: $primary-color-nitroblue;
+        font-size: 1.125rem;
+        font-weight: 400;
+        padding-top: 0.5rem;
+        padding-bottom: 3rem;
+        margin: 0;
+    }
+}
+
+// Cold Drinks styling
+.colddrinks {
+    background-color: $neutral-color-lightgrey;
+    text-align: center;
+
+    &__title {
+        font-weight: 300;
+        font-size: 3.75rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    &__subtitle {
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    &__description {
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-style: italic;
+        width: 30%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    &__price {
+        color: $primary-color-nitroblue;
+        font-size: 1.125rem;
+        font-weight: 400;
+        padding-top: 0.5rem;
+        padding-bottom: 3rem;
+        margin: 0;
+    }
+}
+
+// pastries stylings
+.pastries {
+    background-color: $primary-color-nitropink;
+    text-align: center;
+
+    &__title {
+        font-weight: 300;
+        font-size: 3.75rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    &__subtitle {
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    &__description {
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-style: italic;
+        width: 30%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    &__price {
+        color: $primary-color-nitroblue;
+        font-size: 1.125rem;
+        font-weight: 400;
+        padding-top: 0.5rem;
+        padding-bottom: 3rem;
+        margin: 0;
+    }
+}

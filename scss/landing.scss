@@ -1,0 +1,349 @@
+@use "./partials/global" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+// Header Nav Styling
+.nav {
+    background-color: $primary-color-nitropink;
+    margin: 0;
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__logo {
+        @include flex(row, space-around, center, null);
+        margin: 0 0 0 1rem;
+        text-decoration: none;
+        color: $neutral-color-black;
+    }
+
+    &__image {
+        width: 40%;
+    }
+
+    &__title {
+        font-size: 3.75rem;
+        font-weight: 300;
+        margin: 0;
+        padding-right: 4rem;
+    }
+
+    &__links {
+        @include flex(row, flex-end, flex-end, null);
+        list-style-type: none;
+        font-size: 1.31rem;
+        font-weight: 400;
+        flex-grow: 1;
+        gap: 4rem;
+        margin-right: 1rem;
+    }
+
+    &__link--anchor {
+        text-decoration: none;
+        color: $neutral-color-black;
+    }
+
+    &__link--shopnow {
+        color: $primary-color-nitroblue;
+    }
+}
+
+/* section nitro coffee */
+.nitrocoffee {
+    background-color: $primary-color-nitropink;
+    @include flex(row, space-evenly, null, wrap);
+    height: 85vh;
+    padding: 0 5.5rem;
+
+    &__box {
+        @include flex(column, center, flex-start, wrap);
+    }
+
+    &__title {
+        font-size: 4.5rem;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    &__text {
+        width: 40%;
+        font-size: 1.3rem;
+    }
+
+    &__buttons {
+        @include flex(column, left, center, null);
+        width: 18%;
+        margin-top: 1.5rem;
+    }
+
+    &__buttons2 {
+        border: 2px solid $neutral-color-black;
+        width: 98%;
+        height: 7.5vh;
+        position: relative;
+    }
+
+    &__buttons3 {
+        width: 100%;
+        height: 7.7vh;
+        margin-top: -3.7rem;
+        margin-right: -0.9rem;
+    }
+
+    &__button {
+        font-size: 1.31rem;
+        font-weight: 400;
+        background-color: $primary-color-nitroblue;
+        color: white;
+        border: $primary-color-nitroblue;
+        padding: 1.25rem;
+        width: 100%;
+    }
+
+    &__image {
+        height: 70.5vh;
+        width: 21.5%;
+        padding-top: 2rem;
+    }
+}
+
+/* Products Styling */
+.products {
+    background-color: $neutral-color-lightgrey;
+    padding: 1rem;
+
+    &__title {
+        font-size: 3.75rem;
+        font-weight: 300;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__cards {
+        margin: 2rem;
+        padding: 2rem;
+        @include flex(row, space-around, null, wrap);
+        gap: 0.5rem;
+        flex-shrink: inherit;
+        width: auto;
+    }
+
+    &__card {
+        @include flex(column, space-between, center, null);
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: 5px 5px 10px 5px rgb(215, 214, 214);
+        border-radius: 1rem;
+        text-align: center;
+    }
+
+    &__card--image {
+        height: 34.5vh;
+        margin: 2rem 5rem;
+        padding: 0;
+        width: 45%;
+    }
+
+    &__containers {
+        @include flex(row, space-around, null, null);
+        background-color: $primary-color-nitropink;
+        width: 100%;
+    }
+
+    &__container {
+        @include flex(column, null, flex-start, null);
+
+        &--name {
+            font-size: 1.7rem;
+            font-weight: 300;
+            padding: 0;
+            margin: 1.5rem 0 0 0;
+            white-space: nowrap;
+        }
+    
+        &--description {
+            margin: 0 0 2rem 0;
+            color: $neutral-color-grey;
+        }
+    }
+
+    &__containers--price {
+        @include flex(row, null, center, null);
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $primary-color-nitroblue;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    &__buttons {
+        @include flex(column, center, center, null);
+        padding: 2rem;
+    }
+
+    &__button2 {
+        border: 2px solid rgb(25, 3, 80);
+        width: 12.7%;
+        height: 7.6vh;
+        position: relative;
+    }
+
+    &__button3 {
+        width: 13%;
+        height: 7.9vh;
+        margin-top: -3.8rem;
+        margin-right: -0.8rem;
+    }
+
+    &__button {
+        font-size: 1.31rem;
+        font-weight: 400;
+        background-color: $primary-color-nitroblue;
+        color: $neutral-color-white;
+        border: $primary-color-nitroblue;
+        padding: 1.25rem;
+        width: 100%;
+    }
+}
+
+/* Discount Styling*/
+.discount {
+    background-color: $neutral-color-white;
+    height: 100vh;
+    padding: 3rem 0 10rem 0;
+
+    &__containers {
+        @include flex(row, null, null, null);
+        /* flex-wrap: wrap; */
+    }
+
+    &__container1 {
+        @include flex(column, null, null, null);
+        margin: 6rem;
+    }
+
+    &__title {
+        font-size: 3.75rem;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    &__images {
+        @include flex(row, start, null, null);
+        gap: 9rem;
+    }
+
+    &__image {
+        width: 5%;
+    }
+
+    &__buttons {
+        @include flex(column, null, null, null);
+        width: 30%;
+        margin-top: 2rem;
+    }
+
+    &__button2 {
+        display: block;
+        border: 2px solid rgb(25, 3, 80);
+        width: 98.5%;
+        height: 7.5vh;
+        position: relative;
+    }
+
+    &__button3 {
+        display: block;
+        width: 100%;
+        height: 7.7vh;
+        margin-top: -3.7rem;
+        margin-left: 0.4rem;
+    }
+
+    &__button {
+        font-size: 1.31rem;
+        font-weight: 400;
+        background-color: $primary-color-nitroblue;
+        color: $neutral-color-white;
+        border: $primary-color-nitroblue;
+        padding: 1.25rem;
+        width: 100%;
+    }
+
+    &__content {
+        @include flex(column, center, center, null);
+        width: 100%;
+    }
+
+    &__content1 {
+        border: .3125rem solid $primary-color-nitroblue;
+        width: 60%;
+        height: 45vh;
+        position: relative;
+    }
+
+    &__container2 {
+        background-image: url("../assets/images/coldbrewbackground.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 45vh;
+        width: 60%;
+        background-size: cover;
+        @include flex(column, space-around, center, wrap);
+        margin-top: -22rem;
+        margin-right: -2.3125rem;
+    }
+
+    &__text {
+        background-color: $neutral-color-graphite;
+        text-align: center;
+        font-size: 2.8rem;
+        padding: 3rem 2rem;
+        color: $neutral-color-white;
+        // width: 80%;
+        margin: 8rem;
+    }
+}
+
+// footer styling
+.footer {
+    background-color: $primary-color-nitropink;
+    @include flex(row, space-around, center, wrap);
+    padding: 0rem 0rem 3rem 0rem;
+    position: relative;
+    overflow: hidden;
+
+    &__image1 {
+        width: 8.4%;
+        opacity: 25%;
+        position: absolute;
+        bottom: 1rem;
+        right: -2.5rem;
+    }
+
+    &__image2 {
+        width: 8.4%;
+        opacity: 25%;
+        position: absolute;
+        top: 1rem;
+        left: -2.5rem;
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+
+    &__text {
+        font-size: 1.1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__links {
+        width: 100%;
+        margin: 0 2rem 2rem 0;
+
+        &--icon {
+            width: 30%;
+        }
+    }
+}

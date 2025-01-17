@@ -1,0 +1,351 @@
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: #FFF0ED;
+  margin: 0;
+  padding: 1rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 0 1rem;
+  text-decoration: none;
+  color: black;
+}
+.nav__image {
+  width: 40%;
+}
+.nav__title {
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin: 0;
+  padding-right: 4rem;
+}
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  list-style-type: none;
+  font-size: 1.31rem;
+  font-weight: 400;
+  flex-grow: 1;
+  gap: 4rem;
+  margin-right: 1rem;
+}
+.nav__link--anchor {
+  text-decoration: none;
+  color: black;
+}
+.nav__link--shopnow {
+  color: #5BACC3;
+}
+
+/* section nitro coffee */
+.nitrocoffee {
+  background-color: #FFF0ED;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 85vh;
+  padding: 0 5.5rem;
+}
+.nitrocoffee__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.nitrocoffee__title {
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+.nitrocoffee__text {
+  width: 40%;
+  font-size: 1.3rem;
+}
+.nitrocoffee__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  width: 18%;
+  margin-top: 1.5rem;
+}
+.nitrocoffee__buttons2 {
+  border: 2px solid black;
+  width: 98%;
+  height: 7.5vh;
+  position: relative;
+}
+.nitrocoffee__buttons3 {
+  width: 100%;
+  height: 7.7vh;
+  margin-top: -3.7rem;
+  margin-right: -0.9rem;
+}
+.nitrocoffee__button {
+  font-size: 1.31rem;
+  font-weight: 400;
+  background-color: #5BACC3;
+  color: white;
+  border: #5BACC3;
+  padding: 1.25rem;
+  width: 100%;
+}
+.nitrocoffee__image {
+  height: 70.5vh;
+  width: 21.5%;
+  padding-top: 2rem;
+}
+
+/* Products Styling */
+.products {
+  background-color: #F7F7F7;
+  padding: 1rem;
+}
+.products__title {
+  font-size: 3.75rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+.products__cards {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex-shrink: inherit;
+  width: auto;
+}
+.products__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px 5px rgb(215, 214, 214);
+  border-radius: 1rem;
+  text-align: center;
+}
+.products__card--image {
+  height: 34.5vh;
+  margin: 2rem 5rem;
+  padding: 0;
+  width: 45%;
+}
+.products__containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #FFF0ED;
+  width: 100%;
+}
+.products__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.products__container--name {
+  font-size: 1.7rem;
+  font-weight: 300;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+  white-space: nowrap;
+}
+.products__container--description {
+  margin: 0 0 2rem 0;
+  color: #909090;
+}
+.products__containers--price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #5BACC3;
+  padding: 0;
+  font-weight: bold;
+}
+.products__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.products__button2 {
+  border: 2px solid rgb(25, 3, 80);
+  width: 12.7%;
+  height: 7.6vh;
+  position: relative;
+}
+.products__button3 {
+  width: 13%;
+  height: 7.9vh;
+  margin-top: -3.8rem;
+  margin-right: -0.8rem;
+}
+.products__button {
+  font-size: 1.31rem;
+  font-weight: 400;
+  background-color: #5BACC3;
+  color: #FFF;
+  border: #5BACC3;
+  padding: 1.25rem;
+  width: 100%;
+}
+
+/* Discount Styling*/
+.discount {
+  background-color: #FFF;
+  height: 100vh;
+  padding: 3rem 0 10rem 0;
+}
+.discount__containers {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+.discount__container1 {
+  display: flex;
+  flex-direction: column;
+  margin: 6rem;
+}
+.discount__title {
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin: 0;
+}
+.discount__images {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 9rem;
+}
+.discount__image {
+  width: 5%;
+}
+.discount__buttons {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 2rem;
+}
+.discount__button2 {
+  display: block;
+  border: 2px solid rgb(25, 3, 80);
+  width: 98.5%;
+  height: 7.5vh;
+  position: relative;
+}
+.discount__button3 {
+  display: block;
+  width: 100%;
+  height: 7.7vh;
+  margin-top: -3.7rem;
+  margin-left: 0.4rem;
+}
+.discount__button {
+  font-size: 1.31rem;
+  font-weight: 400;
+  background-color: #5BACC3;
+  color: #FFF;
+  border: #5BACC3;
+  padding: 1.25rem;
+  width: 100%;
+}
+.discount__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.discount__content1 {
+  border: 0.3125rem solid #5BACC3;
+  width: 60%;
+  height: 45vh;
+  position: relative;
+}
+.discount__container2 {
+  background-image: url("../assets/images/coldbrewbackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45vh;
+  width: 60%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -22rem;
+  margin-right: -2.3125rem;
+}
+.discount__text {
+  background-color: #393939;
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 3rem 2rem;
+  color: #FFF;
+  margin: 8rem;
+}
+
+.footer {
+  background-color: #FFF0ED;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0rem 0rem 3rem 0rem;
+  position: relative;
+  overflow: hidden;
+}
+.footer__image1 {
+  width: 8.4%;
+  opacity: 25%;
+  position: absolute;
+  bottom: 1rem;
+  right: -2.5rem;
+}
+.footer__image2 {
+  width: 8.4%;
+  opacity: 25%;
+  position: absolute;
+  top: 1rem;
+  left: -2.5rem;
+}
+.footer__title {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+.footer__text {
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0;
+}
+.footer__links {
+  width: 100%;
+  margin: 0 2rem 2rem 0;
+}
+.footer__links--icon {
+  width: 30%;
+}/*# sourceMappingURL=landing.css.map */
