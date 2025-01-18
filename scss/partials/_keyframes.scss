@@ -1,0 +1,21 @@
+@use "./variables" as *;
+
+@keyframes rotate-discount-image1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes flash-discount-text {
+    from {
+        background-color: $neutral-color-graphite;
+    }
+
+    to {
+        background-color: $primary-color-nitroblue;
+    }
+}

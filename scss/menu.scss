@@ -1,6 +1,7 @@
 @use "./partials/global" as *;
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
+@use "./partials/keyframes" as *;
 
 // header stylings
 .nav {
@@ -59,7 +60,6 @@
     &__container {
         position: relative;
         width: 20.5%;
-        // height: 24.64vh;
         height: 24vh;
         border: .3125rem solid $primary-color-nitroblue;
         margin-bottom: -11.9rem;

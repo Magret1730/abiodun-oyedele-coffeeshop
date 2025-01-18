@@ -6,6 +6,22 @@ body {
   box-sizing: border-box;
 }
 
+@keyframes rotate-discount-image1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes flash-discount-text {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5BACC3;
+  }
+}
 .nav {
   background-color: #FFF0ED;
   height: 9.857vh;
